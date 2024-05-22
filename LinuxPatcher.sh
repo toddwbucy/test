@@ -1,6 +1,6 @@
 # Script Name: linux_patcher
 #
-# Version: 2.5
+# Version: 2.5.1
 #
 # Author: michael.quintero@rackspace.com
 #
@@ -39,9 +39,9 @@ distro_ball() {
 
 # Primary identification logic for the distros lives here. Tread carefully...the global variable 'package_manager' lives here.
     case $dis_name in
-        rhel|centos|fedora|amzn)
+        rhel|centos|fedora|amzn|ol)
             export package_manager="yum"
-            if [[ "$dis_name" == "amzn" ]]; then
+            if [[ "$dis_name" == "amzn" || "$dis_name" == "ol" ]]; then
                 echo "$(grep "^PRETTY_NAME=" /etc/os-release | cut -d'"' -f2)"
             else
                 echo "Red Hat Version : $(cat /etc/redhat-release)"
@@ -115,7 +115,7 @@ modernize() {
 # So I opted to call once in the post_reboot_operations
 post_security_op() {
     if [[ "$package_manager" == "yum" ]]; then
-        echo "RUNNING OPERATIONS FOR RED HAT/AMAZON LINUX"
+        echo "RUNNING OPERATIONS FOR RED HAT/AMAZON/ORACLE LINUX"
         $package_manager updateinfo list security installed | grep RHSA > /root/$CHANGE/security_installed.after
     elif [[ "$package_manager" == "apt" ]]; then
         echo "RUNNING OPERATIONS FOR DEBIAN/UBUNTU"
@@ -248,7 +248,7 @@ animate_text
             ubuntu|debian)
                 package_manager="apt"
                 ;;
-            rhel|amzn)
+            rhel|amzn|ol) # Added 'ol' for Oracle Linux
                 package_manager="yum"
                 ;;
             *)
@@ -268,7 +268,7 @@ animate_text
     if [ ! -z "$Kernel" ]; then  
         echo "KERNEL VERSION SPECIFIED: $Kernel. GENERATING patchme.sh..."
 
-        if [[ "$ID" == "rhel" || "$ID" == "amzn" ]]; then
+        if [[ "$ID" == "rhel" || "$ID" == "amzn" || "$ID" == "ol" ]]; then
             cat <<EOF > /root/$CHANGE/patchme.sh
 #!/bin/bash
 newkernel="$Kernel"
@@ -314,7 +314,7 @@ check_kernel_updates() {
             updates=$(apt list --upgradable 2>&1 | grep 'linux-image') 
             [[ -z "$updates" ]] && echo "NO KERNEL UPDATES AVAILABLE" || echo "$updates"
             ;;
-        rhel|amzn)
+        rhel|amzn|ol)
             yum list kernel --showduplicates | tail -5
             ;;
         *)
