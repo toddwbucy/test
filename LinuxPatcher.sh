@@ -27,6 +27,9 @@
 
 #!/bin/bash
 
+
+TERM=xterm
+
 #Better be the root user otherwise, no dice!
 if [[ "$EUID" -ne 0 ]]; then
    echo "YOU NEED TO RUN THE SCRIPT AS ROOT, TRY AGAIN!" 
