@@ -1,6 +1,6 @@
 #!/bin/bash
 # Set the command ID and region
-COMMAND_ID="77f4bfad-aea3-4785-85b2-5e6c04f7fb3a"
+COMMAND_ID="94821de6-0827-46e8-bd16-d98cfb9676e7"
 REGION="us-east-1"
 
 # Get the list of instance IDs associated with the command
