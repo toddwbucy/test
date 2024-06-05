@@ -361,7 +361,7 @@ fi
     echo "CLEARING PACKAGE MANAGER CACHE"
     echo "------------------------------"
     echo "Executing: ${package_manager} clean all"
-    if ! sudo bash -c "${package_manager} clean all"; then
+    if ! bash -c "${package_manager} clean all"; then
         echo -e "\033[31mQC FAILED: ISSUES CLEANING CACHE.\033[0m"
         test_repos_result="FAILED"
         return 1
