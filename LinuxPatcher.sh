@@ -1,6 +1,6 @@
 # Script Name: linux_patcher
 #
-# Version: 2.5.2
+# Version: 2.5.4
 #
 # Author: michael.quintero@rackspace.com
 #
@@ -26,9 +26,6 @@
 
 
 #!/bin/bash
-
-
-TERM=xterm
 
 #Better be the root user otherwise, no dice!
 if [[ "$EUID" -ne 0 ]]; then
@@ -400,6 +397,8 @@ fi
         echo "(Current date): $(date)"
         echo "(Server running since): $(uptime)"
         echo "(Current running kernel version): $(uname -r)"
+        /opt/CrowdStrike/falconctl -g --rfm-state 2>/dev/null | grep -q 'rfm-state=false' && echo "(Is Crowdstrike running): Yes" || echo "(Is Crowdstrike running): No"
+        echo "(Current Crowdstrike Version): $(/opt/CrowdStrike/falconctl -g --version 2>/dev/null)"
         echo "(Available Kernel Updates):"
         echo "$(check_kernel_updates)"
         echo "(Test Repositories Result): $test_repos_result"

@@ -1,2033 +1,0 @@
-Output for Instance ID: i-0e57fc62c27d0ec2f
---2024-06-05 13:09:28--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.36M=0.009s
-
-2024-06-05 13:09:28 (2.36 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/nvme0n1p2      300G   54G      247G  18% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:55 CDT 2024
-(Server running since):  13:09:55 up 173 days, 12:29,  0 users,  load average: 1.53, 1.32, 0.93
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-07547a091710b870c
---2024-06-05 18:09:28--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.39M=0.009s
-
-2024-06-05 18:09:28 (2.39 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvda2          300G   12G      289G   4% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 18:10:00 UTC 2024
-(Server running since):  18:10:00 up 173 days, 12:29,  0 users,  load average: 0.36, 0.18, 0.22
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-000bafe0c9059b3c6
---2024-06-05 18:09:28--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.45M=0.009s
-
-2024-06-05 18:11:35 (2.45 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvda2          300G    7G      294G   3% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 18:12:07 UTC 2024
-(Server running since):  18:12:07 up 173 days, 12:31,  0 users,  load average: 0.54, 0.24, 0.29
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-011a46c9a950ddf25
---2024-06-05 18:09:28--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.40M=0.009s
-
-2024-06-05 18:09:28 (2.40 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvda2          300G   13G      288G   5% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 18:10:00 UTC 2024
-(Server running since):  18:10:00 up 173 days, 12:29,  0 users,  load average: 0.37, 0.63, 0.50
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-0fd893d608dd3897c
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.40M=0.009s
-
-2024-06-05 13:09:28 (2.40 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvda2          300G   57G      244G  19% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:10:01 CDT 2024
-(Server running since):  13:10:01 up 173 days, 12:29,  0 users,  load average: 0.59, 0.78, 0.73
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-0606d2d30d80d2119
---2024-06-05 18:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.30M=0.009s
-
-2024-06-05 18:11:35 (2.30 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvda2           60G   46G       15G  77% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 18:12:07 UTC 2024
-(Server running since):  18:12:07 up 173 days, 12:30,  0 users,  load average: 1.09, 0.43, 0.26
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-0310916ced5f2a526
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.42M=0.009s
-
-2024-06-05 13:09:28 (2.42 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/nvme0n1p2      300G   54G      247G  18% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:57 CDT 2024
-(Server running since):  13:09:57 up 173 days, 12:29,  0 users,  load average: 0.42, 0.34, 0.51
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-064623fc594c807bc
---2024-06-05 18:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.22M=0.01s
-
-2024-06-05 18:09:28 (2.22 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Okta PAM Stable - rhel 8                        1.4 kB/s | 653  B     00:00    
-Puppet 5 Repository el 7 - x86_64               7.2 kB/s | 2.5 kB     00:00    
-Red Hat Enterprise Linux 8 for x86_64 - AppStre 5.9 kB/s | 4.5 kB     00:00    
-Red Hat Enterprise Linux 8 for x86_64 - BaseOS  5.3 kB/s | 4.1 kB     00:00    
-Red Hat Ansible Engine 2 for RHEL 8 (RPMs) from 5.2 kB/s | 4.0 kB     00:00    
-RHUI Client Configuration Server 8              1.9 kB/s | 1.5 kB     00:00    
-Metadata cache created.
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-45 files removed
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/nvme0n1p2       60G   11G       50G  18% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for txdot4awpdldb01 =====[0m
-(Current date): Wed Jun  5 18:09:48 UTC 2024
-(Server running since):  18:09:48 up 173 days, 12:29,  0 users,  load average: 0.20, 0.29, 0.24
-(Current running kernel version): 4.18.0-477.27.1.el8_8.x86_64
-(Available Kernel Updates):
-kernel.x86_64           4.18.0-513.11.1.el8_9           rhel-8-baseos-rhui-rpms 
-kernel.x86_64           4.18.0-513.18.1.el8_9           rhel-8-baseos-rhui-rpms 
-kernel.x86_64           4.18.0-513.24.1.el8_9           rhel-8-baseos-rhui-rpms 
-kernel.x86_64           4.18.0-553.el8_10               rhel-8-baseos-rhui-rpms 
-kernel.x86_64           4.18.0-553.5.1.el8_10           rhel-8-baseos-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-4b72a3d8
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.33M=0.009s
-
-2024-06-05 13:09:27 (2.33 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   19G       62G  24% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:40 CDT 2024
-(Server running since):  13:09:40 up 173 days, 12:24,  0 users,  load average: 1.20, 1.23, 0.72
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-0c7770848c30fb399
---2024-06-05 18:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.34M=0.009s
-
-2024-06-05 18:11:35 (2.34 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/nvme0n1p2       60G   25G       36G  41% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 18:12:04 UTC 2024
-(Server running since):  18:12:04 up 173 days, 12:32,  0 users,  load average: 0.52, 0.17, 0.17
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-026ef079d2b6ad74d
---2024-06-05 18:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.28M=0.009s
-
-2024-06-05 18:09:27 (2.28 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Extra Packages for Enterprise Linux 8 - x86_64   21 kB/s | 9.3 kB     00:00    
-Okta PAM Stable - rhel 8                        1.5 kB/s | 653  B     00:00    
-Red Hat Enterprise Linux 8 for x86_64 - AppStre 6.0 kB/s | 4.5 kB     00:00    
-Red Hat Enterprise Linux 8 for x86_64 - BaseOS  5.4 kB/s | 4.1 kB     00:00    
-Red Hat Ansible Engine 2 for RHEL 8 (RPMs) from 5.3 kB/s | 4.0 kB     00:00    
-RHUI Client Configuration Server 8              2.0 kB/s | 1.5 kB     00:00    
-Metadata cache created.
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-51 files removed
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/nvme0n1p2       60G   11G       50G  18% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for txdot4wvphvr01 =====[0m
-(Current date): Wed Jun  5 18:09:44 UTC 2024
-(Server running since):  18:09:44 up 173 days, 12:29,  0 users,  load average: 1.59, 0.64, 0.29
-(Current running kernel version): 4.18.0-477.27.1.el8_8.x86_64
-(Available Kernel Updates):
-kernel.x86_64           4.18.0-513.11.1.el8_9           rhel-8-baseos-rhui-rpms 
-kernel.x86_64           4.18.0-513.18.1.el8_9           rhel-8-baseos-rhui-rpms 
-kernel.x86_64           4.18.0-513.24.1.el8_9           rhel-8-baseos-rhui-rpms 
-kernel.x86_64           4.18.0-553.el8_10               rhel-8-baseos-rhui-rpms 
-kernel.x86_64           4.18.0-553.5.1.el8_10           rhel-8-baseos-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-2874a5bb
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.51M=0.009s
-
-2024-06-05 13:09:27 (2.51 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   16G       65G  20% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 173 days, 12:27,  0 users,  load average: 0.34, 0.41, 0.39
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-497cadda
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.37M=0.009s
-
-2024-06-05 13:09:27 (2.37 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G    5G       76G   6% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 85 days, 12:37,  0 users,  load average: 0.14, 0.20, 0.24
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-0af18860d771d2888
---2024-06-05 18:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.31M=0.009s
-
-2024-06-05 18:09:27 (2.31 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvda2          300G   12G      289G   4% /
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 18:09:59 UTC 2024
-(Server running since):  18:09:59 up 173 days, 12:29,  0 users,  load average: 0.41, 0.18, 0.16
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-9372a300
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.27M=0.009s
-
-2024-06-05 13:11:34 (2.27 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   19G       62G  23% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:11:46 CDT 2024
-(Server running since):  13:11:46 up 173 days, 12:30,  0 users,  load average: 0.42, 0.55, 0.72
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-767cade5
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.27M=0.009s
-
-2024-06-05 13:09:27 (2.27 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   15G       66G  18% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 85 days, 12:57,  0 users,  load average: 0.64, 0.30, 0.35
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-d171a042
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.33M=0.009s
-
-2024-06-05 13:09:27 (2.33 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G    4G       77G   4% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 173 days, 12:29,  0 users,  load average: 0.34, 0.45, 0.42
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-2d70a1be
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.32M=0.009s
-
-2024-06-05 13:09:27 (2.32 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   32G       49G  40% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 173 days, 12:28,  0 users,  load average: 0.64, 0.37, 0.34
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-1e4e9f8d
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.31M=0.009s
-
-2024-06-05 13:11:34 (2.31 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   15G       66G  18% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:11:46 CDT 2024
-(Server running since):  13:11:46 up 173 days, 12:31,  0 users,  load average: 0.51, 0.32, 0.29
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-d373a240
---2024-06-05 13:09:27--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.31M=0.009s
-
-2024-06-05 13:09:27 (2.31 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: mysql-connectors-community mysql-tools-community
-              : mysql56-community oktapam-stable
-              : rhel-7-server-rhui-rh-common-rpms rhel-7-server-rhui-rpms
-              : rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   56G       24G  70% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:40 CDT 2024
-(Server running since):  13:09:40 up 85 days, 12:57,  0 users,  load average: 0.08, 0.19, 0.21
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-060f0d8d96d85c5eb
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.27M=0.009s
-
-2024-06-05 13:09:27 (2.27 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: mysql-connectors-community mysql-tools-community
-              : mysql56-community oktapam-stable
-              : rhel-7-server-rhui-rh-common-rpms rhel-7-server-rhui-rpms
-              : rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   56G       25G  70% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:40 CDT 2024
-(Server running since):  13:09:40 up 173 days, 12:28,  0 users,  load average: 0.45, 0.57, 0.59
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-727402eb
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.41M=0.009s
-
-2024-06-05 13:09:26 (2.41 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   19G       62G  23% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:38 CDT 2024
-(Server running since):  13:09:38 up 173 days, 12:29,  0 users,  load average: 0.37, 0.50, 0.52
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-0ed49987dfdaae075
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.30M=0.009s
-
-2024-06-05 13:11:34 (2.30 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: mysql-connectors-community mysql-tools-community
-              : mysql56-community oktapam-stable
-              : rhel-7-server-rhui-rh-common-rpms rhel-7-server-rhui-rpms
-              : rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   51G       30G  63% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:11:47 CDT 2024
-(Server running since):  13:11:47 up 173 days, 12:29,  0 users,  load average: 0.26, 0.73, 0.55
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-207402b9
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.34M=0.009s
-
-2024-06-05 13:09:26 (2.34 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   18G       63G  23% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:38 CDT 2024
-(Server running since):  13:09:38 up 173 days, 12:28,  0 users,  load average: 0.10, 0.20, 0.29
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-cc740255
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.44M=0.009s
-
-2024-06-05 13:09:26 (2.44 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   11G       70G  13% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:38 CDT 2024
-(Server running since):  13:09:38 up 173 days, 12:28,  0 users,  load average: 0.60, 0.95, 0.59
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-0c750395
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.35M=0.009s
-
-2024-06-05 13:09:26 (2.35 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   19G       62G  23% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 173 days, 12:23,  0 users,  load average: 1.37, 0.88, 0.60
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-9e204baf
-	
-------------------------------------
-Output for Instance ID: i-86204bb7
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.44M=0.009s
-
-2024-06-05 13:11:33 (2.44 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: cuda-7-5-local oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G    7G       74G   9% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:11:45 CDT 2024
-(Server running since):  13:11:45 up 173 days, 12:31,  0 users,  load average: 0.24, 0.10, 0.09
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-622c4753
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.30M=0.009s
-
-2024-06-05 13:09:26 (2.30 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   18G       63G  23% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:38 CDT 2024
-(Server running since):  13:09:38 up 173 days, 12:23,  0 users,  load average: 0.40, 0.43, 0.31
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-3b23480a
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.35M=0.009s
-
-2024-06-05 13:09:26 (2.35 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   29G       52G  36% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:38 CDT 2024
-(Server running since):  13:09:38 up 114 days, 15:53,  0 users,  load average: 0.53, 1.00, 0.94
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-60234851
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.57M=0.008s
-
-2024-06-05 13:09:26 (2.57 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-Existing lock /var/run/yum.pid: another copy is running as pid 10992.
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  29 M RSS (439 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:01 ago
-    State  : Sleeping, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  32 M RSS (444 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:03 ago
-    State  : Sleeping, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  33 M RSS (445 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:05 ago
-    State  : Sleeping, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  33 M RSS (445 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:07 ago
-    State  : Sleeping, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  33 M RSS (445 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:09 ago
-    State  : Sleeping, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  33 M RSS (445 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:11 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  36 M RSS (449 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:13 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  36 M RSS (449 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:15 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  36 M RSS (449 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:17 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  36 M RSS (449 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:19 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  36 M RSS (449 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:21 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  36 M RSS (449 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:23 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  36 M RSS (449 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:25 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory :  33 M RSS (445 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:27 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory : 263 M RSS (676 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:29 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory : 265 M RSS (678 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:31 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory : 270 M RSS (684 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:33 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory : 282 M RSS (696 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:35 ago
-    State  : Running, pid: 10992
-Another app is currently holding the yum lock; waiting for it to exit...
-  The other application is: yum
-    Memory : 282 M RSS (696 MB VSZ)
-    Started: Wed Jun  5 13:09:38 2024 - 00:37 ago
-    State  : Running, pid: 10992
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   51G       30G  64% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 173 days, 12:27,  0 users,  load average: 1.81, 1.29, 0.79
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-3f214a0e
---2024-06-05 13:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.38M=0.009s
-
-2024-06-05 13:11:33 (2.38 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   19G       62G  23% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:11:45 CDT 2024
-(Server running since):  13:11:45 up 173 days, 12:25,  0 users,  load average: 0.38, 0.39, 0.41
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-732d4642
---2024-06-05 18:09:26--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.25M=0.009s
-
-2024-06-05 18:09:26 (2.25 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   37G       44G  47% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 18:09:59 UTC 2024
-(Server running since):  18:09:59 up 114 days, 18:07,  0 users,  load average: 0.72, 0.64, 0.66
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-1b214a2a
---2024-06-05 13:09:25--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.43M=0.009s
-
-2024-06-05 13:09:26 (2.43 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   18G       63G  23% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 173 days, 12:28,  0 users,  load average: 0.32, 0.24, 0.23
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-c42e45f5
---2024-06-05 13:09:25--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.26M=0.009s
-
-2024-06-05 13:09:26 (2.26 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G   23G       58G  28% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:09:39 CDT 2024
-(Server running since):  13:09:39 up 173 days, 12:23,  0 users,  load average: 0.37, 0.54, 0.44
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
-Output for Instance ID: i-01214a30
---2024-06-05 13:09:25--  https://raw.githubusercontent.com/toddwbucy/test/main/LinuxPatcher.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 22363 (22K) [text/plain]
-Saving to: ‘LinuxPatcher.sh’
-
-     0K .......... .......... .                               100% 2.42M=0.009s
-
-2024-06-05 13:11:33 (2.42 MB/s) - ‘LinuxPatcher.sh’ saved [22363/22363]
-
-TERM environment variable not set.
-TERM environment variable not set.
-	[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K[33mQC SEQUENCE INITIATED...[0m[K[34mQC SEQUENCE INITIATED...[0m[K[35mQC SEQUENCE INITIATED...[0m[K[36mQC SEQUENCE INITIATED...[0m[K[31mQC SEQUENCE INITIATED...[0m[K[32mQC SEQUENCE INITIATED...[0m[K
---------------------------------
-TESTING REPOSITORY FUNCTIONALITY
---------------------------------
-
-Executing: yum makecache
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Metadata Cache Created
-[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.[0m
-------------------------------
-CLEARING PACKAGE MANAGER CACHE
-------------------------------
-Executing: yum clean all
-Loaded plugins: amazon-id, product-id, search-disabled-repos
-Cleaning repos: oktapam-stable rhel-7-server-rhui-rh-common-rpms
-              : rhel-7-server-rhui-rpms rhui-client-config-server-7
-Other repos take up 904 k of disk space (use --verbose for details)
--------------------
-CHECKING DISK SPACE
--------------------
-SUFFICIENT DISK SPACE IN /var. PROCEEDING WITH THE SCRIPT.
-Filesystem     1G-blocks  Used Available Use% Mounted on
-/dev/xvdd            80G    8G       73G  10% /var
-[32mQC PASSED FOR DISK SPACE[0m
---------------------
-GENERATING QC REPORT
---------------------
-[33m===== QC report for prd =====[0m
-(Current date): Wed Jun  5 13:11:45 CDT 2024
-(Server running since):  13:11:45 up 78 days, 15:02,  0 users,  load average: 0.20, 0.19, 0.22
-(Current running kernel version): 3.10.0-1160.102.1.el7.x86_64
-(Available Kernel Updates):
-kernel.x86_64           3.10.0-1160.105.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.108.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.114.2.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.118.1.el7           rhel-7-server-rhui-rpms 
-kernel.x86_64           3.10.0-1160.119.1.el7           rhel-7-server-rhui-rpms 
-(Test Repositories Result): PASSED
-(Disk Space Check Result): PASSED
-[33m========================================[0m
-------------------------------------
