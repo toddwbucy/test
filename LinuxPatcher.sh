@@ -1,6 +1,6 @@
 # Script Name: linux_patcher
 #
-# Version: 2.5.4
+# Version: 2.5.5
 #
 # Author: michael.quintero@rackspace.com
 #
@@ -206,6 +206,7 @@ packages_installed_last_update() {
         echo "===== Maintenance report for $(hostname -s) ====="
         echo "(Current date): $(date)"
         echo "(Server running since): $(uptime -s)"
+        /opt/CrowdStrike/falconctl -g --rfm-state 2>/dev/null | grep -q 'rfm-state=false' && echo "(Is Crowdstrike running): Yes" || echo "(Is Crowdstrike running): No"
         echo "(Packages installed during maintenance): $(count_packages_installed_last_update)"
         echo "(Previous running kernel version): $(cat /root/$CHANGE/kernel.before)"
         echo "(Current running kernel version): $(uname -r)"
