@@ -331,7 +331,7 @@ EOF
     fi
 
     echo "Executing: $clean_cmd"
-    if ! $clean_cmd; then
+    if ! eval "$clean_cmd"; then
         echo -e "\033[31mQC FAILED: ISSUE MAKING CACHE. POSSIBLY DUE TO PERMISSION ISSUES, CORRUPTED CACHE FILES, OR PACKAGE MANAGER CONFIGURATION ERRORS\033[0m"
         test_repos_result="FAILED"
     else
@@ -341,7 +341,6 @@ EOF
     if [ "$test_repos_result" = "FAILED" ]; then
         return 1
     fi
-
     echo "------------------------------"
     echo "CLEARING PACKAGE MANAGER CACHE"
     echo "------------------------------"
