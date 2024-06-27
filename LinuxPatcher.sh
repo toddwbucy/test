@@ -1,3 +1,30 @@
+# Script Name: linux_patcher
+#
+# Version: 2.5.8
+#
+# Author: michael.quintero@rackspace.com
+#
+# Description: This script can help automate much of not all of the standard patching process. It features an option set for running on full auto, or even just a quick QC check, and generates a log file in the $CHANGE directory. 
+# Has logic to determine if the patch and reboot has already occurred and will continue with the reamining portion of the patch process, after reboot. This version supports Redhat versions 7-9, Amazon Linux, and Debian/Ubuntu.
+#
+# ALWAYS USE THE FULL KERNEL NAME WHEN SPECIFYING A KERNEL TO USE!!!! For example, with RHEL distros, you will set the -k flag with 'kernel-4.18.0-513.24.1.el8_9'. Do not use '4.18.0-513.24.1.el8_9' or nothing will happen!
+#
+# Usage: When running the script, you need to be root. Also, you will ALWAYS need to set the '-c' change switch.
+#
+# By design as a failsafe, the QC function is set to run if you invoke 'linux_patcher -c CHG0123456' with no other switches. I have left the '-q' switch for the user to intentionally invoke though, for increased usability. 
+#
+# To ONLY create the patchme script, run 'bash linux_patcher -c CHG0123456 -k $MY_KERNEL'
+#
+# To ONLY install a specified kernel on the system and not perform any patching, run 'bash linux_patcher -c CHG0123456 -k $MY_KERNEL -a'. 
+#
+# To reboot immediately after the kernel install or patch run, you need to specify such using '-r', like so 'bash linux_patcher -c CHG0123456 -r -k $MY_KERNEL -a' or 'bash linux_patcher -c CHG0123456 -r -a', respectively.
+#
+# The script will NOT reboot on its own!!!!!!!!!!!!!!!!!!!!!! The '-r' flag needs to be set to do so.
+#
+# Lastly, if you want to perform patching of the instance...which for redhat is just the security packages and for Ubuntu is all packages, run 'bash linux_patcher -c CHG0123456 -a'.
+# After performing a manual patch, you can run with the  '-p' switch if you don't reboot, to generate the maintenance report, 'bash linux_patcher -c CHG0123456 -p' or if you do reboot, you can use the '-a' switche, and the script will pick up where it left off.
+
+
 #!/bin/bash
 
 # Better be the root user otherwise, no dice!
@@ -20,7 +47,7 @@ distro_ball() {
         return 1
     fi
 
-    # Primary identification logic for the distros lives here. Tread carefully...the global variable 'package_manager' lives here.
+# Primary identification logic for the distros lives here. Tread carefully...the global variable 'package_manager' lives here.
     case $dis_name in
         rhel|centos|fedora|amzn|ol)
             export package_manager="yum"
@@ -198,38 +225,38 @@ packages_installed_last_update() {
 
 # Big dawg function, for those times when you just want the instance to give a quick diagnostic report, in relation to patching.
 QC() {
-    if [[ $silent_mode -eq 1 ]]; then
+        if [[ $silent_mode -eq 1 ]]; then
         exec 3>&1 4>&2  # Save STDOUT & STDERR
         exec 1>/dev/null 2>&1  # Redirect STDOUT & STDERR to /dev/null
     fi
 
     clear
-    colors=(31 32 33 34 35 36)
+colors=(31 32 33 34 35 36)
 
-    animate_text() {
-        local text="QC SEQUENCE INITIATED..."
-        local delay=0.2
-        local duration=3
-        local end_time=$((SECONDS + duration))
+animate_text() {
+    local text="QC SEQUENCE INITIATED..."
+    local delay=0.2
+    local duration=3
+    local end_time=$((SECONDS + duration))
 
-        echo -ne "\r\033[K"
+    echo -ne "\r\033[K"
 
-        while [ $SECONDS -lt $end_time ]; do
-            for color in "${colors[@]}"; do
-                if [ $SECONDS -ge $end_time ]; then
-                    break
-                fi
-                echo -ne "\033[${color}m${text}\033[0m"
-                sleep $delay
-                echo -ne "\r\033[K"
-            done
+    while [ $SECONDS -lt $end_time ]; do
+        for color in "${colors[@]}"; do
+            if [ $SECONDS -ge $end_time ]; then
+                break
+            fi
+            echo -ne "\033[${color}m${text}\033[0m"
+            sleep $delay
+            echo -ne "\r\033[K"
         done
-    }
+    done
+}
 
-    animate_text
+animate_text
 
-    # This is a failsafe, in the event the '-c' switch doesn't set, for whatever reason, the change directory
-    [ ! -d "/root/$CHANGE" ] && mkdir -p "/root/$CHANGE"
+# This is a failsafe, in the event the '-c' switch doesn't set, for whatever reason, the change directory
+[ ! -d "/root/$CHANGE" ] && mkdir -p "/root/$CHANGE"
 
     if [[ -f /etc/os-release ]]; then
         . /etc/os-release
@@ -252,8 +279,8 @@ QC() {
         return 1
     fi
 
-    # The patcheme section. I decided to leave in-line for now, but will probably modularize into a function which is only called with the switch.
-    # Speaking of which, if a user specifies a '-k' flag with a kernel, we'll generate the patchme files for Qualys
+# The patcheme section. I decided to leave in-line for now, but will probably modularize into a function which is only called with the switch.
+# Speaking of which, if a user specifies a '-k' flag with a kernel, we'll generate the patchme files for Qualys
     if [ ! -z "$Kernel" ]; then  
         echo "KERNEL VERSION SPECIFIED: $Kernel. GENERATING patchme.sh..."
 
@@ -287,60 +314,61 @@ EOF
     local disk_space_check_result="PASSED"
 
 
-    # I had to add distro identification within the QC function as QC is called on its own. the distro_ball() function sin't invoked with QC.
-    # This was done to ensure the independence of the QC function
-    check_kernel_updates() {
-        if [ -f /etc/os-release ]; then
-            . /etc/os-release
-        else
-            echo "UNABLE TO IDENTIFY THE DISTRIBUTION IN USE"
-            return 1
-        fi
-
-        case $ID in
-            ubuntu|debian)
-                apt-get update > /dev/null 2>&1
-                updates=$(apt list --upgradable 2>&1 | grep 'linux-image') 
-                [[ -z "$updates" ]] && echo "NO KERNEL UPDATES AVAILABLE" || echo "$updates"
-                ;;
-            rhel|amzn|ol)
-                yum list kernel --showduplicates | tail -5
-                ;;
-            *)
-                echo "DISTRIBUTION $ID NOT SUPPORTED BY THIS SCRIPT."
-                return 1
-                ;;
-        esac
-    }
-
-    clear
-    echo
-    echo "--------------------------------"
-    echo "TESTING REPOSITORY FUNCTIONALITY"
-    echo "--------------------------------"
-    echo
-
-    if [[ "$package_manager" == "yum" ]]; then
-        if [[ "$VERSION_ID" == 7* ]]; then
-            clean_cmd="yum makecache fast"
-        else
-            clean_cmd="yum makecache --timer"
-        fi
+# I had to add distro identification within the QC function as QC is called on its own. the distro_ball() function sin't invoked with QC.
+# This was done to ensure the independence of the QC function
+check_kernel_updates() {
+    if [ -f /etc/os-release ]; then
+        . /etc/os-release
     else
-        clean_cmd="apt-get update && apt-get autoclean"
-    fi
-
-    echo "Executing: $clean_cmd"
-    if ! eval "$clean_cmd"; then
-        echo -e "\033[31mQC FAILED: ISSUE MAKING CACHE. POSSIBLY DUE TO PERMISSION ISSUES, CORRUPTED CACHE FILES, OR PACKAGE MANAGER CONFIGURATION ERRORS\033[0m"
-        test_repos_result="FAILED"
-    else
-        echo -e "\033[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.\033[0m"
-    fi
-
-    if [ "$test_repos_result" = "FAILED" ]; then
+        echo "UNABLE TO IDENTIFY THE DISTRIBUTION IN USE"
         return 1
     fi
+
+    case $ID in
+        ubuntu|debian)
+            apt-get update > /dev/null 2>&1
+            updates=$(apt list --upgradable 2>&1 | grep 'linux-image') 
+            [[ -z "$updates" ]] && echo "NO KERNEL UPDATES AVAILABLE" || echo "$updates"
+            ;;
+        rhel|amzn|ol)
+            yum list kernel --showduplicates | tail -5
+            ;;
+        *)
+            echo "DISTRIBUTION $ID NOT SUPPORTED BY THIS SCRIPT."
+            return 1
+            ;;
+    esac
+}
+
+clear
+echo
+echo "--------------------------------"
+echo "TESTING REPOSITORY FUNCTIONALITY"
+echo "--------------------------------"
+echo
+
+if [[ "$package_manager" == "yum" ]]; then
+    if [[ "$VERSION_ID" == 7* ]]; then
+        clean_cmd="yum makecache fast"
+    else
+        clean_cmd="yum makecache --timer"
+    fi
+else
+    clean_cmd="apt-get update && apt-get autoclean"
+fi
+
+echo "Executing: $clean_cmd"
+if ! eval "$clean_cmd"; then
+    echo -e "\033[31mQC FAILED: ISSUE MAKING CACHE. POSSIBLY DUE TO PERMISSION ISSUES, CORRUPTED CACHE FILES, OR PACKAGE MANAGER CONFIGURATION ERRORS\033[0m"
+    test_repos_result="FAILED"
+else
+    echo -e "\033[32mQC REPOSITORY FUNCTIONALITY TEST PASSED.\033[0m"
+fi
+
+if [ "$test_repos_result" = "FAILED" ]; then
+    return 1
+fi
+
     echo "------------------------------"
     echo "CLEARING PACKAGE MANAGER CACHE"
     echo "------------------------------"
@@ -375,7 +403,7 @@ EOF
     echo "--------------------"
     sleep 5
 
-    if [[ $silent_mode -eq 1 ]]; then
+if [[ $silent_mode -eq 1 ]]; then
         exec 1>&3 2>&4  # Restore standard output and standard error
     fi
 
@@ -439,28 +467,28 @@ pre_reboot_operations() {
 
 post_reboot_operations() {
     clear
-    found_marker=$(find /root/$CHANGE -name "script_reboot_marker" -print -quit)
-    colors=(31 32 33 34 35 36)
+found_marker=$(find /root/$CHANGE -name "script_reboot_marker" -print -quit)
+colors=(31 32 33 34 35 36)
 
-    animate_text() {
-        local text="POST REBOOT OPERATIONS SEQUENCE INITIATED..."
-        local delay=0.2 
-        local duration=3
-        local end_time=$((SECONDS + duration)) 
+animate_text() {
+    local text="POST REBOOT OPERATIONS SEQUENCE INITIATED..."
+    local delay=0.2 
+    local duration=3
+    local end_time=$((SECONDS + duration)) 
 
-        echo -ne "\r\033[K"
+    echo -ne "\r\033[K"
 
-        while [ $SECONDS -lt $end_time ]; do
-            for color in "${colors[@]}"; do
-                if [ $SECONDS -ge $end_time ]; then
-                    break
-                fi
-                echo -ne "\033[${color}m${text}\033[0m"
-                sleep $delay
-                echo -ne "\r\033[K"
-            done
+    while [ $SECONDS -lt $end_time ]; do
+        for color in "${colors[@]}"; do
+            if [ $SECONDS -ge $end_time ]; then
+                break
+            fi
+            echo -ne "\033[${color}m${text}\033[0m"
+            sleep $delay
+            echo -ne "\r\033[K"
         done
-    }
+    done
+}
 
     animate_text
     distro_ball
@@ -472,33 +500,33 @@ post_reboot_operations() {
 
 auto_mode () {
 
-    if [ -z "$CHANGE" ]; then
-        echo "Error: CHANGE variable not set. Use the -c flag to set it."
-        exit 1
-    fi
+if [ -z "$CHANGE" ]; then
+    echo "Error: CHANGE variable not set. Use the -c flag to set it."
+    exit 1
+fi
 
-    clear
-    colors=(31 32 33 34 35 36)
+clear
+colors=(31 32 33 34 35 36)
 
-    animate_text() {
-        local text="AUTOMATED PATCH SEQUENCE INITIATED..."
-        local delay=0.2 
-        local duration=3
-        local end_time=$((SECONDS + duration)) 
+animate_text() {
+    local text="AUTOMATED PATCH SEQUENCE INITIATED..."
+    local delay=0.2 
+    local duration=3
+    local end_time=$((SECONDS + duration)) 
 
-        echo -ne "\r\033[K"
+    echo -ne "\r\033[K"
 
-        while [ $SECONDS -lt $end_time ]; do
-            for color in "${colors[@]}"; do
-                if [ $SECONDS -ge $end_time ]; then
-                    break
-                fi
-                echo -ne "\033[${color}m${text}\033[0m"
-                sleep $delay
-                echo -ne "\r\033[K"
-            done
+    while [ $SECONDS -lt $end_time ]; do
+        for color in "${colors[@]}"; do
+            if [ $SECONDS -ge $end_time ]; then
+                break
+            fi
+            echo -ne "\033[${color}m${text}\033[0m"
+            sleep $delay
+            echo -ne "\r\033[K"
         done
-    }
+    done
+}
 
     animate_text
     pre_reboot_operations
