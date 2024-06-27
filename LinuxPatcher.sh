@@ -347,7 +347,7 @@ echo "--------------------------------"
 echo
 
 if [[ "$package_manager" == "yum" ]]; then
-    if [[ "$ID" == "amzn" && "$VERSION_ID" == "2" ]]; then
+    if [[ "$ID" == "amzn" && ( "$VERSION_ID" == "2" || "$VERSION_ID" == "2018.03" ) ]]; then
         clean_cmd="yum makecache fast"
     elif [[ "$VERSION_ID" == 7* ]]; then
         clean_cmd="yum makecache fast"
