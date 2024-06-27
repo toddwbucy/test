@@ -1,6 +1,6 @@
 # Script Name: linux_patcher
 #
-# Version: 2.5.5
+# Version: 2.5.8
 #
 # Author: michael.quintero@rackspace.com
 #
@@ -27,11 +27,13 @@
 
 #!/bin/bash
 
-#Better be the root user otherwise, no dice!
+# Better be the root user otherwise, no dice!
 if [[ "$EUID" -ne 0 ]]; then
    echo "YOU NEED TO RUN THE SCRIPT AS ROOT, TRY AGAIN!" 
    exit 1
 fi
+
+silent_mode=0
 
 # Gotta figure out who you are. This is a big dog function.
 distro_ball() {
@@ -223,6 +225,11 @@ packages_installed_last_update() {
 
 # Big dawg function, for those times when you just want the instance to give a quick diagnostic report, in relation to patching.
 QC() {
+        if [[ $silent_mode -eq 1 ]]; then
+        exec 3>&1 4>&2  # Save STDOUT & STDERR
+        exec 1>/dev/null 2>&1  # Redirect STDOUT & STDERR to /dev/null
+    fi
+
     clear
 colors=(31 32 33 34 35 36)
 
@@ -340,11 +347,15 @@ clear
     echo "--------------------------------"
     echo
 
-if [[ "$package_manager" == "yum" ]]; then
-    clean_cmd="${package_manager} makecache"
-else
-    clean_cmd="apt-get check && apt-get autoclean"
-fi
+    if [[ "$package_manager" == "yum" ]]; then
+        if [[ "$VERSION_ID" == 7* ]]; then
+            clean_cmd="yum makecache fast"
+        else
+            clean_cmd="yum makecache --timer"
+        fi
+    else
+        clean_cmd="apt-get update && apt-get autoclean"
+    fi
 
 echo "Executing: $clean_cmd"
 if ! $clean_cmd; then
@@ -387,11 +398,14 @@ fi
 
     echo -e "\033[32mQC PASSED FOR DISK SPACE\033[0m"
 
-
     echo "--------------------"
     echo "GENERATING QC REPORT"
     echo "--------------------"
     sleep 5
+
+if [[ $silent_mode -eq 1 ]]; then
+        exec 1>&3 2>&4  # Restore standard output and standard error
+    fi
 
     {
         echo -e "\033[33m===== QC report for $(hostname -s) =====\033[0m"
@@ -521,7 +535,7 @@ animate_text() {
 reboot_flag=0 
 
 # Note! The reboot switch must be before any other flag
-while getopts "c:qaphrk:" opt; do
+while getopts "c:qaphrk:s" opt; do
     case $opt in
         r) reboot_flag=1
            ;;
@@ -543,7 +557,9 @@ while getopts "c:qaphrk:" opt; do
            fi
            exit 0
            ;;
-        h) echo "Usage: $0 [-r Reboot. Must specify before -a and -k switch ] [-c Change Ticket] [-q QC Only] [-a Automatic Mode. To run security patching] [-p Post Reboot Operations] [-h Help] [-v Version] [-k Kernel Version]"
+        s) silent_mode=1
+           ;;
+        h) echo "Usage: $0 [-r Reboot. Must specify before -a and -k switch ] [-c Change Ticket] [-q QC Only] [-a Automatic Mode. To run security patching] [-p Post Reboot Operations] [-h Help] [-v Version] [-k Kernel Version] [-s Silent Mode]"
            exit 0
            ;;
         *) echo "Invalid option: -$OPTARG" >&2
